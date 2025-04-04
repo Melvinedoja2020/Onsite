@@ -10,7 +10,7 @@ from core.applications.users.models import User
 
 from .serializers import UserSerializer
 
-
+#  user
 class UserViewSet(RetrieveModelMixin, ListModelMixin, UpdateModelMixin, GenericViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()
